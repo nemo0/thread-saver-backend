@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const { client } = require('./config/twitter');
 const { getTweetsRecurse } = require('./utils/utils');
-const axios = require('axios');
 const db = require('./config/db');
 require('dotenv').config({ path: './config/.env' });
 
