@@ -1,17 +1,15 @@
 FROM node:14
 
-# Create app directoy
 WORKDIR /app
 
-# Install Dependencies
-COPY package*.json /app
+COPY package*.json /app/
 
 RUN npm install
 
 RUN npm install pm2 -g
 
-COPY . /app
+COPY . /app/
 
-CMD ["pm2-runtime", "index.js"]
+CMD npm start
 
-EXPOSE 3000
+EXPOSE 3456
