@@ -8,7 +8,7 @@ require('dotenv').config({ path: './config/.env' });
 client.stream(
   'statuses/filter',
   {
-    track: '#saveTheTweet @NemoK98381806',
+    track: '#saveTheThread @NemoK98381806',
     tweet_mode: 'extended',
   },
   function (stream) {
@@ -41,8 +41,16 @@ client.stream(
   }
 );
 
+app.get('/', (req, res) => {
+  res.redirect('https://threadsaver.xyz');
+});
+
+app.get('/:id', (req, res) => {
+  res.send('Sorry, page not found.');
+});
+
 // Server Setup
-const PORT = 8080;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server Running on PORT ${PORT}`);
 });

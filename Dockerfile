@@ -14,4 +14,4 @@ COPY . /app
 
 CMD ["pm2-runtime", "index.js"]
 
-EXPOSE 8081
+EXPOSE 3000
