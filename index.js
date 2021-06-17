@@ -8,7 +8,7 @@ require('dotenv').config({ path: './config/.env' });
 client.stream(
   'statuses/filter',
   {
-    track: '#saveTheThread @NemoK98381806',
+    track: 'save @NemoK98381806',
     tweet_mode: 'extended',
   },
   function (stream) {
