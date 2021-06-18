@@ -1,5 +1,7 @@
 # Thread Saver Backend
 
+**REMEMBER TO CREATE A TABLE CALLED _tweets_ WITH HASH ATTRIBUTE _id_ TO YOUR HARPERDB DATABASE SCHEMA WHEN YOU RUN LOCALLY**
+
 ## 🎯 Description
 
 ![Thread Saver](https://i.ibb.co/Df2GTHt/threadsaver.gif)
